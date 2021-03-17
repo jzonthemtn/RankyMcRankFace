@@ -35,7 +35,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <mainClass>ciir.umass.edu.eval.Evaluator</mainClass>
-    <javaVersion>1.8</javaVersion>
+    <javaVersion>11</javaVersion>
   </properties>
 
   <dependencies>
@@ -76,6 +76,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.2</version>
         <configuration>
+          <release>${javaVersion}</release>
           <source>${javaVersion}</source>
           <target>${javaVersion}</target>
         </configuration>
